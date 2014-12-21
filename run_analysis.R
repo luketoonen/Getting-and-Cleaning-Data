@@ -47,7 +47,7 @@ names(DataSet4)<-c("Subject","ActivityID",TableNamesMean1,TableNamesSD1)
 
 Activities<-c("Walking","Walking_Upstairs","Walking_Downstairs","Sitting","Standing","Laying")
 
-##Step 3&4 use descriptive activity names to name the activities and label the data set with descriptive variable names
+##Finished data frame: DataSet5 with descriptive activity names and labels the data set with descriptive variable names
 DataSet5<-cbind(Activities,DataSet4)
 
 ## Average for each Activity results of the sample of 30 subjects

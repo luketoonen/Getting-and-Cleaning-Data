@@ -56,5 +56,5 @@ AveragePerActivity<-group_by(SelectActivity,ActivityID)
 AveragePerActivity1<-summarise_each(AveragePerActivity,funs(mean))
 AveragePerActivity2<-cbind(Activities,AveragePerActivity1)
 
-##Write Tables called AveragePerSubject and AveragePerActivty into working directory
+##Write tables called AveragePerActivty into working directory
 write.table(AveragePerActivity2,file="AveragePerActivity.txt",row.names=F)

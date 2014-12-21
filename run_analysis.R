@@ -13,7 +13,7 @@ TrainingLabels<-read.table("UCI HAR Dataset/train/y_train.txt")
 TrainingSubjects<-read.table("UCI HAR Dataset/train/subject_train.txt")
 TrainingSets<-read.table("UCI HAR Dataset/train/X_train.txt")
 
-## Adding Headers and making a Test and Training Data Frame
+## Adding analysis column names and making a Test and Training Data Frame
 names(TestSubjects)<-c("Subject")
 names(TestLabels)<-c("ActivityID")
 Test<-cbind(TestSubjects,TestLabels,TestSets)
